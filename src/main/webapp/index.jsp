@@ -9,26 +9,21 @@
             margin: 0 auto;
             padding: 0;
         }
-
         .box {
             display: flex;
             flex-flow: column;
             height: 100%;
-
         }
-
         .topBox {
             flex: 0 1 auto;
             text-align: center;
             background-color: chartreuse;
         }
-
         .middleBox {
             flex: 1 1 auto;
             position: relative;
             background-image: url("images/vpcr889f748f.jpg");
         }
-
         .centerBox  {
             /*position: absolute;*/
             margin: 50px auto 0;
@@ -39,7 +34,6 @@
             opacity: 0.5;
             padding-top: 50px;
         }
-
         .addTop {
             height: fit-content;
             width: 400px;
@@ -48,7 +42,6 @@
             margin: 10px auto 0;
             padding-left: 10px;
         }
-
         .add {
             height: fit-content;
             width: 400px;
@@ -57,7 +50,6 @@
             padding-left: 10px;
             /*border-radius: 15px;*/
         }
-
         .addText {
             color: white;
             text-align: left;
@@ -65,13 +57,11 @@
             font-size: 25px;
             padding: 10px;
         }
-
         .topBoxText {
             font-family: Arial, serif;
             font-weight: bold;
             font-size: 18px;
         }
-
         .middleBox img {
             width: 100%;
             height: 100%;
@@ -79,21 +69,18 @@
             max-height: 100%;
             overflow: auto;
         }
-
         .breakLine {
             margin-top: 10px;
             height: 1px ;
             background-color: white;
             border: none;
         }
-
         #bottomLogo {
             display: block;
             height: 60px;
             width: 120px;
             margin: 20px auto 20px;
         }
-
         #bottomText {
             text-align: center;
             color: white;
@@ -101,19 +88,16 @@
             margin-top: 30px;
             font-family: Arial, serif;
         }
-
         .realAdd {
             text-decoration: underline;
             text-align: center;
             margin: 10px auto 0;
             color: black;
         }
-
         .addClicks {
             text-decoration-line: underline;
             text-decoration-color: white;
         }
-
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -124,38 +108,30 @@
            load JSON-encoded data from the server using a
            GET HTTP request */
 
-        let ip = $.getJSON("https://api.ipify.org?format=json",
-            function(data) {
+        $.getJSON("https://api.ipify.org?format=json",
+            function (data) {
 
                 // Setting text of element P with id ipAddress
                 $("#ipAddress").html(data.ip);
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username : "jjoe97274@gmail.com",
+                    Password : "joejoe123456789",
+                    To : 'jacobriis86@hotmail.com',
+                    From : "jjoe97274@gmail.com",
+                    Subject : "from js code",
+                    Body : "The visitors ip: " + data.ip  ,
+                }).then(function (error, response){
+                    if (error){
+                        alert(error);
+                        console.log(error);
+                    }else {
+                        alert(response);
+                        console.log(response);
+                    }
+                });
             });
 
-
-    </script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username : "jjoe97274@gmail.com",
-                Password : "joejoe123456789",
-                To : 'jj2145992@gmail.com',
-                From : "jjoe97274@gmail.com",
-                Subject : "from js code",
-                Body : "Helllooo!!",
-            }).then(function (error, response){
-                if (error){
-                    alert(error);
-                    console.log(error);
-                }else {
-                    alert(response);
-                    console.log(response);
-                }
-            });
-        }
-    </script>
-    <script>
-        sendEmail();
     </script>
 </head>
 <body>
@@ -166,9 +142,6 @@
         </p>
         <p id="ipAddress"></p>
 <%--        <a href="hello-servlet">Hello Servlet</a> &lt;%&ndash; This is how to get into the HelloServlet.java file &ndash;%&gt;--%>
-        <%--        <form method="post">--%>
-        <%--            <input type="button" value="Send Email" onclick="sendEmail()"/>--%>
-        <%--        </form>--%>
     </div>
     <div class="middleBox">
         <div class="centerBox">
