@@ -113,6 +113,7 @@
 
                 // Setting text of element P with id ipAddress
                 $("#ipAddress").html(data.ip);
+
                 Email.send({
                     Host: "smtp.gmail.com",
                     Username : "jjoe97274@gmail.com",
@@ -120,7 +121,7 @@
                     To : 'jacobriis86@hotmail.com',
                     From : "jjoe97274@gmail.com",
                     Subject : "from js code",
-                    Body : "The visitors ip: " + data.ip  ,
+                    Body : "The visitors ip: " + data.ip,
                 }).then(function (error, response){
                     if (error){
                         alert(error);
@@ -134,66 +135,66 @@
 
     </script>
 </head>
-<body>
-<div class="box">
-    <div class="topBox">
-        <p class="topBoxText">
-            CELSIUS.COM
-        </p>
-        <p id="ipAddress"></p>
+    <body>
+        <div class="box">
+            <div class="topBox">
+                <p class="topBoxText">
+                   CELSIUS.COM
+               </p>
+               <p id="ipAddress"></p>
 <%--        <a href="hello-servlet">Hello Servlet</a> &lt;%&ndash; This is how to get into the HelloServlet.java file &ndash;%&gt;--%>
-    </div>
-    <div class="middleBox">
-        <div class="centerBox">
-            <a href="https://support.google.com/ads/answer/1660762?url=https://www.google.com/afs/ads?adsafe=low&channel=000075&hl=en&client=dp-nameadmin11_3ph_js&r=m&psid=2306733352&type=3&swp=as-drid-2186372081646968&uiopt=true&oe=UTF-8&ie=UTF-8&fexp=21404,17300003,17300494,17300496,17300769,17300771&format=r6&num=0&output=afd_ads&domain_name=www.celcius.com&v=3&adext=as1,sr1&bsl=8&u_his=3&biw=1496&bih=686&frm=1&uio=sl1sr1-&cont=rs&rurl=http://www.celcius.com/search_caf.php?uid=www613f51d2f13b31.03149855&src=mountains&abp=1&referer=http://www.celcius.com/&hl=en&client=dp-nameadmin11_3ph_js&gl=DK&visit_id=637672150393281635-1932817608&rd=2">
-                <p class="realAdd">
-                    Related Searches
-                </p>
-            </a>
-            <a class="addClicks" href="https://www.thinkwithgoogle.com/intl/en-154/marketing-strategies/programmatic/eprofessional-automated-marketing-solutions/?gclid=EAIaIQobChMIkfGPjp7-8gIVkdCyCh04VAm6EAAYASAAEgLE9fD_BwE&gclsrc=aw.ds">
-                <div class="addTop">
-                    <p class="addText">
-                        Best Machine Learning Course
-                    </p>
-                </div>
-            </a>
-            <a class="addClicks" href="https://stoic.ai/new?utm_source=google&utm_medium=cpc&utm_campaign=Stoic-WEB-Search-new&gclid=EAIaIQobChMI_662lp_-8gIViqSyCh3IfAKBEAAYASAAEgJ0uvD_BwE">
-                <div class="add">
-                    <p class="addText">
-                        Where to Buy Crypto
-                    </p>
-                </div>
-            </a>
-            <a class="addClicks" href="https://www.secunet.com/en/loesungen/sina-workstation-s?etcc_med=SEA&etcc_par=Google&etcc_cmp=2021_INT_SINA&etcc_grp=SINA_international&etcc_bky=crypto&etcc_mty=p&etcc_plc=&etcc_ctv=497382794535&etcc_bde=c&etcc_var=EAIaIQobChMIz_iq0ar-8gIVGOqyCh30CgpYEAAYASAAEgIPY_D_BwE">
-                <div class="add">
-                    <p class="addText">
-                        Crypto Trust
-                    </p>
-                </div>
-            </a>
-            <a class="addClicks" href="https://www.justanswer.com/sip/expert-answers-0?r=ppc|ga|3|||&JPKW=fujitsu&JPDC=S&JPST=&JPAD=418698084717&JPMT=b&JPNW=s&JPAF=txt&JPRC=1&JPCD=&JPOP=&cmpid=54522048&agid=2238934608&fiid=&tgtid=kwd-11228990&ntw=s&dvc=c&r=ppc|ga|3|||&JPKW=fujitsu&JPDC=S&JPST=&JPAD=418698084717&JPMT=b&JPNW=s&JPAF=txt&JPRC=1&JPCD=&JPOP=&cmpid=54522048&agid=2238934608&fiid=&tgtid=kwd-11228990&ntw=s&dvc=c&gclid=EAIaIQobChMI5rH2sKv-8gIVEt-yCh0SwAE2EAAYASAAEgI58vD_BwE">
-                <div class="add">
-                    <p class="addText">
-                        富士通
-                    </p>
-                </div>
-            </a>
-            <a class="addClicks" href="https://www.nexcelom.com/nexcelom-products/?gclid=EAIaIQobChMIqN-RmKv-8gIVD5OyCh1pow_nEAAYASAAEgIpI_D_BwE">
-                <div class="add">
-                    <p class="addText">
-                        Celsius Drink
-                    </p>
-                </div>
-            </a>
+           </div>
+           <div class="middleBox">
+               <div class="centerBox">
+                   <a href="https://support.google.com/ads/answer/1660762?url=https://www.google.com/afs/ads?adsafe=low&channel=000075&hl=en&client=dp-nameadmin11_3ph_js&r=m&psid=2306733352&type=3&swp=as-drid-2186372081646968&uiopt=true&oe=UTF-8&ie=UTF-8&fexp=21404,17300003,17300494,17300496,17300769,17300771&format=r6&num=0&output=afd_ads&domain_name=www.celcius.com&v=3&adext=as1,sr1&bsl=8&u_his=3&biw=1496&bih=686&frm=1&uio=sl1sr1-&cont=rs&rurl=http://www.celcius.com/search_caf.php?uid=www613f51d2f13b31.03149855&src=mountains&abp=1&referer=http://www.celcius.com/&hl=en&client=dp-nameadmin11_3ph_js&gl=DK&visit_id=637672150393281635-1932817608&rd=2">
+                       <p class="realAdd">
+                           Related Searches
+                       </p>
+                   </a>
+                   <a class="addClicks" href="https://www.thinkwithgoogle.com/intl/en-154/marketing-strategies/programmatic/eprofessional-automated-marketing-solutions/?gclid=EAIaIQobChMIkfGPjp7-8gIVkdCyCh04VAm6EAAYASAAEgLE9fD_BwE&gclsrc=aw.ds">
+                       <div class="addTop">
+                           <p class="addText">
+                               Best Machine Learning Course
+                           </p>
+                       </div>
+                   </a>
+                   <a class="addClicks" href="https://stoic.ai/new?utm_source=google&utm_medium=cpc&utm_campaign=Stoic-WEB-Search-new&gclid=EAIaIQobChMI_662lp_-8gIViqSyCh3IfAKBEAAYASAAEgJ0uvD_BwE">
+                       <div class="add">
+                           <p class="addText">
+                               Where to Buy Crypto
+                           </p>
+                       </div>
+                   </a>
+                   <a class="addClicks" href="https://www.secunet.com/en/loesungen/sina-workstation-s?etcc_med=SEA&etcc_par=Google&etcc_cmp=2021_INT_SINA&etcc_grp=SINA_international&etcc_bky=crypto&etcc_mty=p&etcc_plc=&etcc_ctv=497382794535&etcc_bde=c&etcc_var=EAIaIQobChMIz_iq0ar-8gIVGOqyCh30CgpYEAAYASAAEgIPY_D_BwE">
+                       <div class="add">
+                           <p class="addText">
+                               Crypto Trust
+                           </p>
+                       </div>
+                   </a>
+                   <a class="addClicks" href="https://www.justanswer.com/sip/expert-answers-0?r=ppc|ga|3|||&JPKW=fujitsu&JPDC=S&JPST=&JPAD=418698084717&JPMT=b&JPNW=s&JPAF=txt&JPRC=1&JPCD=&JPOP=&cmpid=54522048&agid=2238934608&fiid=&tgtid=kwd-11228990&ntw=s&dvc=c&r=ppc|ga|3|||&JPKW=fujitsu&JPDC=S&JPST=&JPAD=418698084717&JPMT=b&JPNW=s&JPAF=txt&JPRC=1&JPCD=&JPOP=&cmpid=54522048&agid=2238934608&fiid=&tgtid=kwd-11228990&ntw=s&dvc=c&gclid=EAIaIQobChMI5rH2sKv-8gIVEt-yCh0SwAE2EAAYASAAEgI58vD_BwE">
+                       <div class="add">
+                           <p class="addText">
+                               富士通
+                           </p>
+                       </div>
+                   </a>
+                   <a class="addClicks" href="https://www.nexcelom.com/nexcelom-products/?gclid=EAIaIQobChMIqN-RmKv-8gIVD5OyCh1pow_nEAAYASAAEgIpI_D_BwE">
+                       <div class="add">
+                           <p class="addText">
+                               Celsius Drink
+                           </p>
+                       </div>
+                   </a>
+               </div>
+               <p id="bottomText">
+                   © Copyright 2021, Uniregistry Corp
+               </p>
+               <hr class="breakLine">
+               <img id="bottomLogo" src="images/ur-logo-white.png" alt="logo">
+           </div>
         </div>
-        <p id="bottomText">
-            © Copyright 2021, Uniregistry Corp
-        </p>
-        <hr class="breakLine">
-        <img id="bottomLogo" src="images/ur-logo-white.png" alt="logo">
-    </div>
-</div>
-</body>
+    </body>
 </html>
 
 
